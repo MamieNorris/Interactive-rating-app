@@ -1,0 +1,131 @@
+body {
+    font-family: 'Overpass';
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.overlay {
+    display: flex;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    align-items: center;
+    justify-content: center;
+    background: #131518;
+}
+
+/* RATING-CONTAINER */
+
+#rating-container,
+#thanks-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background: radial-gradient(98.96% 98.96% at 50% 0%, #232A34 0%, #181E27 100%);
+    max-height: 26rem;
+    max-width: 25.75rem;
+    border-radius: 1.875rem;
+    padding: 2rem;
+}
+
+.note,
+.icon-star-container {
+    display: flex;
+    height: 3rem;
+    width: 3rem;
+    background-color: #262E38;;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+}
+
+.thanks-p,
+.rating-p {
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+    max-width: 21.25rem;
+    margin-top: 0;
+    color: #969FAD;
+}
+
+.note-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.note {
+    font-weight: 700;
+    color: #7C8798;
+    cursor: pointer;
+}
+
+#submit-button {
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: white;
+    letter-spacing: 0.125rem;
+    background-color: #FC7614;
+    border-radius: 1.4rem;
+    margin-top: 1.5rem;
+    padding-top: 0.7rem;
+    padding-bottom: 0.7rem;
+    border: none;
+    cursor: pointer;
+}
+
+/* ACTIVE & HOVER STATE */
+
+.note:hover {
+    background-color: #7C8798;
+    color: white;
+}
+
+.note:active {
+    background-color: #FC7614;
+    color: white;
+}
+
+#submit-button:active {
+    background-color: white;
+    color: #FC7614;
+}
+
+/* THANKS-CONTAINER */
+
+#thanks-container {
+    display: none;
+    align-items: center;
+    padding-top: 2.8rem;
+    padding-bottom: 2.8rem;
+}
+
+#thanks-container img {
+    max-height: 6.75rem;
+    max-width: fit-content;
+}
+
+.user-rating {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: #FC7614;
+    background-color: #262E38;
+    border-radius: 1.4rem;
+    padding: 0.25rem 1.25rem;
+}
+
+.thanks-p {
+    text-align: center;
+    margin-bottom: 0;
+}
